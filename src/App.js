@@ -11,7 +11,6 @@ function App() {
   const [studentDashboard, setStudentDashboard] = useState(false);
   const [listingScreen, setListingScreen] = useState(false);
 
-  console.log(process.env)
   return (
     <div className="App">
       {!individualScreen && !listingScreen && (

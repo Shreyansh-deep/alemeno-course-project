@@ -16,7 +16,7 @@ export const requestData = async () => {
       throw new Error("API request failed");
     }
 
-    const data = await response.json().then((responseData) => responseData);
+    const data = await response.json();
     
 
     return data;

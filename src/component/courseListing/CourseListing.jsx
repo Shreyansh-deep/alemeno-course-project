@@ -31,15 +31,19 @@ const CourseListing = ({
 
   useEffect(() => {
     handleFilter();
-  }, [searchedText, courseArrayData,]);
+  }, [searchedText, courseArrayData, setFilteredArray]);
   
   useEffect(() => {
-    dispatch(courseDataReducer(requestData()));
+    const fetchData = async () => {
+      const response = await requestData();
+      dispatch(courseDataReducer(response));
+    }
+    fetchData();
   },[]);
 
   useEffect(() => {
-    reqCourseData && reqCourseData.then((data) => setCourseArrayData(data));
-  }, []);
+    setCourseArrayData(reqCourseData || []);
+  }, [reqCourseData]);
 
   const handleClick = (course) => {
     setCurrentObject(course);
