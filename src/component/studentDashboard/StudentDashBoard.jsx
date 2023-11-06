@@ -42,6 +42,7 @@ const StudentDashBoard = ({ courseArrayData }) => {
               <img
                 src={course.thumbnail}
                 className="thumbnail-image"
+                alt="thumbnail-image"
               />
             </div>
             <div className="course-detail-container">

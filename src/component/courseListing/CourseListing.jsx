@@ -16,7 +16,7 @@ const CourseListing = ({
   const [filterdArray, setFilteredArray] = useState([]);
   const [searchedText, setSearchedText] = useState("");
 
-  const handleFilter = () => {
+  function handleFilter(){
     if (searchedText === "") {
       setFilteredArray(courseArrayData);
     } else {
