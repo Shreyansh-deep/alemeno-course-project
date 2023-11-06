@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import CourseDetailScreen from "./component/courseDetail/CourseDetailScreen";
+import CourseListing from "./component/courseListing/CourseListing";
+import StudentDashBoard from "./component/studentDashboard/StudentDashBoard";
 
 function App() {
+  const [currentObject, setCurrentObject] = useState({});
+  const [courseArrayData, setCourseArrayData] = useState([]);
+  const [individualScreen, setIndividualScreen] = useState(false);
+  const [studentDashboard, setStudentDashboard] = useState(false);
+  const [listingScreen, setListingScreen] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!individualScreen && !listingScreen && (
+        <CourseListing
+          courseArrayData={courseArrayData}
+          setCourseArrayData={setCourseArrayData}
+          setIndividualScreen={setIndividualScreen}
+          individualScreen={individualScreen}
+          setCurrentObject={setCurrentObject}
+          setStudentDashboard={setStudentDashboard}
+          setListingScreen={setListingScreen}
+        />
+      )}
+      {individualScreen && <CourseDetailScreen currentObject={currentObject} />}
+      {studentDashboard && (
+        <StudentDashBoard
+          currentObject={currentObject}
+          courseArrayData={courseArrayData}
+        />
+      )}
     </div>
   );
 }

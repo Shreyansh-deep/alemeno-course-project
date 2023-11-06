@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "name": "Introduction to React Native",
+    "instructor": "John Doe",
+    "description": "Learn the basics of React Native development and build your first mobile app.",
+    "enrollmentStatus": "Open",
+    "thumbnail": "https://www.bossdigital.tech/wp-content/uploads/2023/04/1631026680-logo-react-native.png",
+    "duration": "8 weeks",
+    "schedule": "Tuesdays and Thursdays, 6:00 PM - 8:00 PM",
+    "location": "Online",
+    "prerequisites": ["Basic JavaScript knowledge", "Familiarity with React"],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Introduction to React Native",
+        "content": "Overview of React Native, setting up your development environment."
+      },
+      {
+        "week": 2,
+        "topic": "Building Your First App",
+        "content": "Creating a simple mobile app using React Native components."
+      }
+    ],
+    "students": [
+      {
+        "id": 101,
+        "name": "Alice Johnson",
+        "email": "alice@example.com"
+      },
+      {
+        "id": 102,
+        "name": "Bob Smith",
+        "email": "bob@example.com"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Python Django",
+    "instructor": "Chandler bing",
+    "description": "Learn the basics of Python Django.",
+    "enrollmentStatus": "Open",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyL8KDVNcsQbDGUhUOGfkwymvJTUiJ3Pa_nA&usqp=CAU",
+    "duration": "6 weeks",
+    "schedule": "Mondays and Thursdays, 6:00 PM - 8:00 PM",
+    "location": "Online",
+    "prerequisites": ["Basic Django knowledge", "Familiarity with Django"],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Introduction to Django 1",
+        "content": "Overview of Django 1"
+      },
+      {
+        "week": 2,
+        "topic": "Introduction to Django 2",
+        "content": "Overview of Django 2"
+      }
+    ],
+    "students": [
+      {
+        "id": 101,
+        "name": "Shreyansh",
+        "email": "shreyansh@example.com"
+      },
+      {
+        "id": 102,
+        "name": "aashish",
+        "email": "aashish@example.com"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "SQL",
+    "instructor": "Rachel",
+    "description": "Learn the basics of SQL.",
+    "enrollmentStatus": "Open",
+    "thumbnail": "https://static.tildacdn.com/tild6238-3035-4335-a333-306335373139/IMG_3349.jpg",
+    "duration": "5 weeks",
+    "schedule": "Tuesdays and Saturday, 6:00 PM - 9:00 PM",
+    "location": "Online",
+    "prerequisites": ["Basic SQL", "Familiarity with SQL"],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Introduction to SQL 1",
+        "content": "Overview of SQL 1"
+      },
+      {
+        "week": 2,
+        "topic": "Introduction to SQL 2",
+        "content": "Overview of SQL 2"
+      }
+    ],
+    "students": [
+      {
+        "id": 101,
+        "name": "Shreyansh 2",
+        "email": "shreyansh2@example.com"
+      },
+      {
+        "id": 102,
+        "name": "aashish 2",
+        "email": "aashish2@example.com"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Introduction to C#",
+    "instructor": "John Doe",
+    "description": "Learn the basics of C#",
+    "enrollmentStatus": "Open",
+    "thumbnail": "data:image/png;base64,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",
+    "duration": "4 weeks",
+    "schedule": "Tuesdays and Sunday, 4:00 PM - 8:00 PM",
+    "location": "Online",
+    "prerequisites": ["Basic C#", "Familiarity with C#"],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Introduction to C# 1",
+        "content": "Overview of C# 1"
+      },
+      {
+        "week": 2,
+        "topic": "Introduction to C# 2",
+        "content": "Overview of C# 2"
+      }
+    ],
+    "students": [
+      {
+        "id": 101,
+        "name": "Shreyansh 3",
+        "email": "shreyansh3@example.com"
+      },
+      {
+        "id": 102,
+        "name": "aashish 3",
+        "email": "aashish3@example.com"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Introduction to javascript",
+    "instructor": "Iron man",
+    "description": "Learn the basics of javascript",
+    "enrollmentStatus": "Open",
+    "thumbnail": "data:image/png;base64,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",
+    "duration": "10 weeks",
+    "schedule": "Monday and Sunday, 4:00 PM - 9:00 PM",
+    "location": "Online",
+    "prerequisites": ["Basic javascript", "Familiarity with javascript"],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Introduction to javascript 1",
+        "content": "Overview of javascript 1"
+      },
+      {
+        "week": 2,
+        "topic": "Introduction to javascript 2",
+        "content": "Overview of javascript 2"
+      }
+    ],
+    "students": [
+      {
+        "id": 101,
+        "name": "Shreyansh 4",
+        "email": "shreyansh4@example.com"
+      },
+      {
+        "id": 102,
+        "name": "aashish 4",
+        "email": "aashish4@example.com"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Introduction to NextJS",
+    "instructor": "Iron man",
+    "description": "Learn the basics of NextJS",
+    "enrollmentStatus": "Open",
+    "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAADV1dXh4eGjo6NZWVm+vr7Jycl9fX2NjY2Tk5Pe3t7v7+/39/f8/PzMzMzo6OhISEirq6uHh4fw8PB4eHizs7PFxcUvLy9DQ0M1NTVTU1Nvb28lJSVmZmYVFRWnp6dGRkYcHByZmZk8PDwXFxdhYWEpKSlYWFgsBK0WAAAE60lEQVR4nO2a2XLbOBBFScuLFkvWZsuxpcixPLL//wtHXNAgSCwkRKZqas55SFIgCOKKQPdFM0kCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/21uFPNg19lNC5oDL13jjWajnJnqMW/zAOdwLlLFKth1lbbgUfU+SZNjTjvpoH6WhzYPmEYrTMehrnedFCZ71fRqHW0pt9yrpqc2DzjFK0xf+lWYvKq235bBFkd1dSNtgytMb/xduyqc+2YlS76yO4ZXmG57VZjcSOt9fayxunJc/FWFv/pVmLxI88gcyn5h6EiTsW+h8Pxx6+ZkJp1nNfBhUW2eyQONl7s8VYf6UDevjSc8XacwvQ0r7LRMvtTAd5VGvUG9L0Slky7Ps1BfBJ6f6C5imSxsYn6ptrP33vteFb5I8H50do1RmIxEoiQjWbqfC9+dPSt8kq3x5uwapVDmmaazomEtDQED1q/CB/1gW37OiVOYbNTAxzwK6RTyELixb4V68bhCSaRCM7l7bYBJ7wp13HP8uLEKdTS7GLS34FIR+leof177BolWWDHZATtu0L9CnYgP1iAXrbASbQR3yG7c1f15BsbCFDNlTVQxGb9kWhcYMPk5QyjUhnhi6VoqfJ9ObGxGlluEH1OgzzoJgyhM/siOaXYNOG+/YTxWu3rtrzCMQh33Zo2uVyl8rPT8aje1gRSKyzo2SlNXKawc/j7DRa+cgRTquPde73qdwkppyn/QbsykixwLDYXJRE1kU+t6pcLkt+rptr4GgylM3tVMaqWpgMKQzUySb9V1mEizGC1tedw2PYl7ZrQpFY6XMyve3fWc/aFNU2/Z4kGun3I/uGoWDG0KtcsyZh3vaS7ni1yiPle0qUW0UfhUXn/8R43cqDVZl9jO2j1eYeaV1tk/PkRii+J8F4X52r+dZNWD51oX+yYSl1XtHq2w8Lu5URPnbbe+Bh0UrtWWyu6pWV67wuSsZrLWbbEKVa0mTxJyRPPXaNRsWyrcS/RafaY7s4tDYfKpZqI9cqxCVXh6zV5byzpbRjeFzi9LLoVbmYm89EiFUjso4paule4CN3ZQmG30Z4eRcCnULkvyc5xCXXgqDx+63t1DJUpFmkPW8c/EdihzKkxu1URUfo5SaPl2ob9Z+A1qF4ULFcI2jTfpVqhdVpmfYxRat51Em4b1Neii8HJk2JSWqX4o8ijUHwCL/BxzxpfCUzV06kJ43foadFN4YVuUgWorw6dQv4A82pQKV2MPe3N4nf6MZl0Itxy04xUmRRyrWUKfQr2JDhWFfox0K1u5HlQahfDrFG6nJ7UJxo3P9V6FOhCeYxTqQ29jeCmE19dUS4WXgPxd/v1VLPvyEe+NGpNfoU5m0+4KdUq1bF05orm/ytoVzvev98Xqylb4d7GXs7J6nimyOF1z9QGFOlTsOiuU46C1vC1HtLpTDijMNCyKKLjKo32WHnIbcfzJvx/UzU1IoY57W/Gq7RRKsgn9b5O19bpP4WVlb5WtLN6YTrt39WHKdreD0i5L0lgrhZNmk4n+H0OOw6Jd4fZ8KALwx8/Fxeiv6i/ni+a3cdPVLAs87mI5KpmNwszkUHSjzv7O+r2+y3597r0KAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwv+Vfynwx33WBCacAAAAASUVORK5CYII=",
+    "duration": "10 weeks",
+    "schedule": "Monday and Sunday, 4:00 PM - 9:00 PM",
+    "location": "Online",
+    "prerequisites": ["Basic NextJS", "Familiarity with NextJS"],
+    "syllabus": [
+      {
+        "week": 1,
+        "topic": "Introduction to NextJS 1",
+        "content": "Overview of NextJS 1"
+      },
+      {
+        "week": 2,
+        "topic": "Introduction to NextJS 2",
+        "content": "Overview of NextJS 2"
+      }
+    ],
+    "students": [
+      {
+        "id": 101,
+        "name": "Shreyansh 5",
+        "email": "shreyansh5@example.com"
+      },
+      {
+        "id": 102,
+        "name": "aashish 5",
+        "email": "aashish5@example.com"
+      }
+    ]
+  }
+]

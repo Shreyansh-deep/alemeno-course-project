@@ -1,0 +1,30 @@
+.student-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.student-dashboard-title{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgb(246, 155, 155);
+    margin-bottom: 30px;
+}
+.course-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 2px black;
+    width: 80%;
+}
+.course-thambnail-container{
+    border: solid 1px black;
+    flex: .3;
+}
+.course-detail-container{
+    flex: 1;
+    padding-bottom: 15px;
+    border: solid 2px black;
+}

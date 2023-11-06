@@ -1,0 +1,50 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 40px auto;
+    font-weight: 400;
+}
+.container-a{
+    display: flex;
+    flex-direction: row;
+}
+.thumbnail-container{
+    flex: 0.3;
+    border: solid 1px black;
+}
+.detail-container{
+    flex: 1;
+    border: solid 1px black;
+}
+.course-detailScreen-name{
+    font-size: 40px;
+    font-weight: 700;
+}
+.course-detailScreen-description{
+    font-size: 20px;
+    font-weight: 500;
+}
+.course-detailScreen-instructor{
+    font-size: 20px;
+}
+.course-prerequisites-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 140px;
+    border: solid 1px black;
+}
+.syllabus-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    border: solid 1px black;
+}
+.coursedetail-thumbnail-image{
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    margin: 0 auto;
+}
