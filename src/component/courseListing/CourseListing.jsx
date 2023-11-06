@@ -10,13 +10,15 @@ const CourseListing = ({
   setStudentDashboard,
   setListingScreen,
   courseArrayData,
-  setCourseArrayData
+  setCourseArrayData,
 }) => {
-
   const [filterdArray, setFilteredArray] = useState([]);
   const [searchedText, setSearchedText] = useState("");
 
-  function handleFilter(){
+  const memoizedSetCourseArrayData = useCallback(setCourseArrayData, []);
+  const memoizedHandleFilter = useCallback(handleFilter, []);
+
+  function handleFilter() {
     if (searchedText === "") {
       setFilteredArray(courseArrayData);
     } else {
@@ -26,11 +28,11 @@ const CourseListing = ({
         )
       );
     }
-  };
+  }
 
   useEffect(() => {
     handleFilter();
-  }, [searchedText, courseArrayData, setFilteredArray, handleFilter]);
+  }, [searchedText, courseArrayData, setFilteredArray, memoizedHandleFilter]);
 
   const handleClick = (course) => {
     setCurrentObject(course);
@@ -55,7 +57,7 @@ const CourseListing = ({
 
   useEffect(() => {
     reqCourseData && reqCourseData.then((data) => setCourseArrayData(data));
-  }, [reqCourseData]);
+  }, [reqCourseData, memoizedSetCourseArrayData]);
 
   return (
     <div className="course-listing-main">
@@ -75,7 +77,11 @@ const CourseListing = ({
         filterdArray.map((course) => (
           <div key={course.id} className="one-course-details">
             <div className="course-thumbnail">
-              <img src={course.thumbnail} className="thumbnail-image" alt="course-thumbnail"/>
+              <img
+                src={course.thumbnail}
+                className="thumbnail-image"
+                alt="course-thumbnail"
+              />
             </div>
             <div className="course-details">
               <h1 className="course-name">{course.name}</h1>
