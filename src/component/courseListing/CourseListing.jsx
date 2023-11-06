@@ -30,7 +30,7 @@ const CourseListing = ({
 
   useEffect(() => {
     handleFilter();
-  }, [searchedText, courseArrayData, setFilteredArray]);
+  }, [searchedText, courseArrayData, setFilteredArray, handleFilter]);
 
   const handleClick = (course) => {
     setCurrentObject(course);
@@ -49,7 +49,7 @@ const CourseListing = ({
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(courseDataReducer(requestData()));
-  }, []);
+  });
 
   const reqCourseData = useSelector((state) => state.courseData.courseData);
 
@@ -75,7 +75,7 @@ const CourseListing = ({
         filterdArray.map((course) => (
           <div key={course.id} className="one-course-details">
             <div className="course-thumbnail">
-              <img src={course.thumbnail} className="thumbnail-image" />
+              <img src={course.thumbnail} className="thumbnail-image" alt="course-thumbnail"/>
             </div>
             <div className="course-details">
               <h1 className="course-name">{course.name}</h1>

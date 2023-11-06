@@ -1,7 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { requestData } from "../../services/courseService";
-
-const data = requestData();
 
 const initialState = { courseData: null };
 

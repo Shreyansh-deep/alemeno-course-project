@@ -5,7 +5,7 @@ const CourseDetailScreen = ({ currentObject }) => {
     <div className="main-container">
       <div className="container-a">
         <div className="thumbnail-container">
-          <img src={currentObject.thumbnail} className="coursedetail-thumbnail-image" />
+          <img src={currentObject.thumbnail} className="coursedetail-thumbnail-image" alt="thumbnail"/>
         </div>
         <div className="detail-container">
           <h1 className="course-detailScreen-name">{currentObject.name}</h1>
