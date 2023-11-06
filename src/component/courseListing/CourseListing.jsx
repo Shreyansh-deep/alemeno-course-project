@@ -15,9 +15,6 @@ const CourseListing = ({
   const [filterdArray, setFilteredArray] = useState([]);
   const [searchedText, setSearchedText] = useState("");
 
-  const memoizedSetCourseArrayData = useCallback(setCourseArrayData, []);
-  const memoizedHandleFilter = useCallback(handleFilter, []);
-
   function handleFilter() {
     if (searchedText === "") {
       setFilteredArray(courseArrayData);
@@ -29,10 +26,20 @@ const CourseListing = ({
       );
     }
   }
+  const dispatch = useDispatch();
+  const reqCourseData = useSelector((state) => state.courseData.courseData);
 
   useEffect(() => {
     handleFilter();
-  }, [searchedText, courseArrayData, setFilteredArray, memoizedHandleFilter]);
+  }, [searchedText, courseArrayData,]);
+  
+  useEffect(() => {
+    dispatch(courseDataReducer(requestData()));
+  },[]);
+
+  useEffect(() => {
+    reqCourseData && reqCourseData.then((data) => setCourseArrayData(data));
+  }, []);
 
   const handleClick = (course) => {
     setCurrentObject(course);
@@ -47,17 +54,6 @@ const CourseListing = ({
     setStudentDashboard(true);
     setListingScreen(true);
   };
-
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(courseDataReducer(requestData()));
-  });
-
-  const reqCourseData = useSelector((state) => state.courseData.courseData);
-
-  useEffect(() => {
-    reqCourseData && reqCourseData.then((data) => setCourseArrayData(data));
-  }, [reqCourseData, memoizedSetCourseArrayData]);
 
   return (
     <div className="course-listing-main">
